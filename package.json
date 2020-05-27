@@ -1,0 +1,35 @@
+{
+  "name": "api_lunch",
+  "version": "1.0.0",
+  "description": "Nodejs Rest APIs with Express, Sequelize & MySql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanGarnier/api-lunch.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "mysql;",
+    "rest",
+    "api"
+  ],
+  "author": "Alan Garnier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanGarnier/api-lunch/issues"
+  },
+  "homepage": "https://github.com/AlanGarnier/api-lunch#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.10"
+  },
+  "devDependencies": {}
+}
