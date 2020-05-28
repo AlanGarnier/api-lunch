@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('procurement', {
     procurement_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       primaryKey: true
     },
@@ -12,11 +12,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     procurement_date: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.DATETIME,
       allowNull: false
     },
     users_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       references: {
         model: 'users',

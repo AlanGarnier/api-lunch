@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('employee', {
     users_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       primaryKey: true,
       references: {
@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     department_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       references: {
         model: 'department',

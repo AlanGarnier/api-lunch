@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('status', {
     status_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       primaryKey: true
     },

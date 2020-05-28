@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('menu', {
     menu_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       primaryKey: true
     },
@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     menu_is_available: {
-      type: DataTypes.INTEGER(1),
+      type: DataTypes.BOOL,
       allowNull: false
     }
   }, {

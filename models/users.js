@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('users', {
     users_id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INT(11),
       allowNull: false,
       primaryKey: true
     },
@@ -32,7 +32,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     users_is_admin: {
-      type: DataTypes.INTEGER(1),
+      type: DataTypes.BOOL,
       allowNull: false
     }
   }, {
