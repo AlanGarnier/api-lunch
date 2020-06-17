@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('command', {
     command_id: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true
     },
@@ -12,11 +12,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     command_is_canceled: {
-      type: DataTypes.BOOL,
+      type: DataTypes.INTEGER(1),
       allowNull: false
     },
     users_id: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       references: {
         model: 'users',

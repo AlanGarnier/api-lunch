@@ -22,11 +22,15 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome to Lunch application." });
 });
 
+// Users route
+require("./app/routes/account.routes")(app);
+
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
 
-const  db = require("../models");
-db.sequelize.sync();
+const  db = require("./app/models");
+//db.sequelize.sync();
+db.sequelize.sync({ alter: true});

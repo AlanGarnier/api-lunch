@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('ligne_cde', {
     menu_id: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true,
       references: {
@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     command_id: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true,
       references: {
@@ -21,12 +21,12 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     ligne_cde_id: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true
     },
     ligne_cde_quantity: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER(11),
       allowNull: false
     },
     ligne_cde_price: {

@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('canteen', {
     users_id: {
-      type: DataTypes.INT(11),
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       references: {
